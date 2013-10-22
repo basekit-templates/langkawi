@@ -1,2 +1,5 @@
-langkawi
+Langkawi
 ========
+
+BaseKit's Langkawi Template
+

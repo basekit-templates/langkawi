@@ -1,0 +1,68 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+
+
+<div class="left">
+        <div class="vertical-nav">
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </div>
+</div>
+
+
+<div class="header-desktop">
+    
+        <div class="header-profile-widgets">
+            {{widget('profile', 'headerprofileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+            {{widget('profile', 'headerprofilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        </div>
+
+        <header class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </header>  
+
+ </div> 
+ 
+
+ <!-- TOP NAV= Company name and nav in IPAD -->
+
+<div class="top-nav wrapper clearfix">
+    <header>
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+    </header>
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+
+</div>
+
+            
+
+ <div class="right">
+
+    <div class="main wrapper clearfix">
+
+                {{zone('main')|raw}}
+
+    </div>  
+
+</div>
+
+
+
+<footer>
+    <div class="wrapper clearfix">       
+            {{widget('profile', 'footercolumn1profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
+            {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+    </div>
+</footer>
+
+
+
+</div>
+
+{% endblock %}
