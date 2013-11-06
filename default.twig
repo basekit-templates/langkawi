@@ -20,8 +20,8 @@
         </div>
 
         <header class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('logo', 'desktoplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'desktopcompanyname', {"business": "profile"})|raw}}
         </header>  
 
  </div> 
@@ -32,11 +32,11 @@
 <div class="top-nav wrapper clearfix">
     <header>
         <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('logo', 'toplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'topcompanyname', {"business": "profile"})|raw}}
         </div>
     </header>
-            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            {{widget('extendednavigation', 'topnavigation', {})|raw}}
 
 </div>
 
