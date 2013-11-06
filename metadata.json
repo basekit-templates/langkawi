@@ -3,9 +3,9 @@
 	"thumbnail":"langkawi.png",
 	"screenshot":"langkawi.png",
     "tags": {
-    "en": ["minimal", "clean", "photography", "modern", "colorful", "colourful", "flexible", "open", "simple", "restaurant", "sans-serif", "bar", "coffee shop", "cafe"],
-    "es": ["minimalista", "limpio", "fotografico", "moderno", "colorido", "flexible", "abierto", "simple", "restaurante", "sans-serif", "bar", "cafetería"],
-    "br": ["minimalista", "limpo", "fotografia", "moderno", "colorido", "flexível", "aberto", "simples", "restaurante", "sans-serif", "bar", "café"]
+    "en": ["turism", "clean", "modern", "colorful", "colourful", "flexible", "open", "vertical menu", "spa", "serif", "travel", "hospitality", "holiday", "hotel"],
+    "es": ["turismo", "limpio", "moderno", "colorido", "flexible", "abierto", "menú vertical", "balneario", "serif", "viaje", "hoteleria", "vacaciones", "hotel"],
+    "br": ["turismo", "limpo", "moderno", "colorido", "flexível", "aberto", "menu vertical", "estância termal", "serif", "Viagem", "hospitalidade", "férias", "hotel"]
     },
 	"colorSwatches":
     {
