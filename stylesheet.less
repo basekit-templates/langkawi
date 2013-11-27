@@ -191,7 +191,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   color: @color-swatch1;
 }
 
-.header-profile-widgets .widget.profile span, .header-profile-widgets .widget.profile a {
+.header-profile-widgets .header-left .widget.profile span,
+.header-profile-widgets .header-right .widget.profile span, 
+.header-profile-widgets .header-left .widget.profile a,
+.header-profile-widgets .header-right .widget.profile a {
   font-size: @font-swatch5-font-size;
   line-height: @font-swatch5-line-height;
   color: @color-swatch1;
@@ -1260,7 +1263,8 @@ hr.line.align-right {
 }
 
 .widget.socialicons span a,
-.widget.profile .bk-profile-socialicons span a {
+.widget.profile .bk-profile-socialicons span a, 
+.header-profile-widgets .header-right .widget.profile .bk-profile-socialicons span a {
     background-color: @color-swatch2;
     background-repeat: no-repeat;
     background-position: center;
