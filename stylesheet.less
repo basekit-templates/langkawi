@@ -165,44 +165,36 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   padding: 0px;
 }
 
-.header-profile-widgets {
+.header-content-widgets {
   height: 50px;
   background-color: @color-swatch2;
   padding: 0 10px;
   margin-left: 182px;
 }
 
-.header-profile-widgets .widget.profile {
+.header-content-widgets .widget.content {
   width: 50%;
   float:left;
-  padding: 15px 0;
+  padding: 17px 0;
 }
 
-.header-profile-widgets .header-left .widget.profile {
+.header-content-widgets .header-left .widget.content {
   text-align: left;
 }
 
 
-
-.header-profile-widgets .header-right .widget.profile {
+.header-content-widgets .header-right .widget.content {
   text-align: right;
 }
 
-.header-profile-widgets .header-right .widget.profile .bk-profile-socialicons {
-  float: right;
-  padding: 0;
-  text-align: none;
-}
 
-.header-profile-widgets .widget.profile span {
+
+.header-content-widgets .widget.content span {
   display: inline-block;
   color: @color-swatch1;
 }
 
-.header-profile-widgets .header-left .widget.profile span,
-.header-profile-widgets .header-right .widget.profile span, 
-.header-profile-widgets .header-left .widget.profile a,
-.header-profile-widgets .header-right .widget.profile a {
+.header-content-widgets .widget.content p {
   font-size: @font-swatch5-font-size;
   line-height: @font-swatch5-line-height;
   color: @color-swatch1;
@@ -212,17 +204,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   font-weight: @font-swatch5-font-weight;
 }
 
-
-
-.header-profile-widgets .widget.profile .bk-profile-socialicons span a {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-profile-widgets .widget.profile .bk-profile-socialicons span a:hover {
-  background-color: darken(@color-swatch2,5%);
-}
 
 
 /* SUB NAV */
@@ -1269,7 +1250,7 @@ hr.line.align-right {
 
 .widget.socialicons span a,
 .widget.profile .bk-profile-socialicons span a, 
-.header-profile-widgets .header-right .widget.profile .bk-profile-socialicons span a {
+.header-content-widgets .header-right .widget.profile .bk-profile-socialicons span a {
     background-color: @color-swatch2;
     background-repeat: no-repeat;
     background-position: center;
@@ -1748,7 +1729,7 @@ footer .widget.profile .twitter span {
       margin-left: 182px;
     }
 
-    .header-profile-widgets {
+    .header-content-widgets {
       margin-left: 0;
     }
 
