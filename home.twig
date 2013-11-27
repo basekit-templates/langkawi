@@ -14,12 +14,12 @@
 
 <div class="header-desktop">
     
-        <div class="header-profile-widgets">
+        <div class="header-content-widgets">
             <div class="header-left">
-            {{widget('profile', 'headerprofileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+            {{widget('content', 'headercontentleft', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
             </div>
             <div class="header-right">
-            {{widget('profile', 'headerprofileemail', { 'profileType':'email', 'email':'profile'})|raw}}
+            {{widget('content', 'headercontentright', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
             </div>
         </div>
 
