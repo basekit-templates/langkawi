@@ -117,6 +117,8 @@ blockquote:before {
 
 .top-nav {
   display: none;
+  margin: 0 auto;
+  width: 100%;
 }
 
 
@@ -158,6 +160,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 /* ===============================
    HEADER
    =============================== */
+
+   header {
+    background-color: @color-swatch1;
+   }
 
 
 .header-desktop {
@@ -215,6 +221,7 @@ header nav {
 .companyheader {
   display: block;
   padding: 20px 0;
+  float: none;
 }
 
 /* COMPANY NAME */
@@ -222,6 +229,7 @@ header nav {
 .widget.companyname {
   text-align: center;
   overflow: hidden;
+  float: none;
 }
 
 .companyname a:hover {
@@ -241,6 +249,7 @@ header nav {
 
 .widget.logo {
   text-align: center;
+  float: none;
 }
 
 /* ===============================
@@ -319,7 +328,9 @@ footer h4 {
    EXTENDED NAVIGATION
    =============================== */
 
-
+.vertical-nav .widget .extendednavigation {
+  float: none;
+}
 
 .vertical-nav .widget.extendednavigation {
     text-align: left;
@@ -330,6 +341,7 @@ footer h4 {
     padding: 10px 0;
     margin: 0;
     text-align: right;
+    width: 100%;
 }
 
 
@@ -356,6 +368,7 @@ footer h4 {
 
 .vertical-nav .widget.extendednavigation ul li {
     display: block;
+    float: none;
 }
 
 .vertical-nav .widget.extendednavigation ul li a {
@@ -1145,11 +1158,11 @@ hr.line.align-right {
 
 .widget.tweet a {
   margin: 0;
-  padding: 16px 40px 16px 63px;
+  padding: 16px 26px 16px 49px;
   background-image: image('/images/social/socialicons-twitter.png');
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 35px center;
+  background-position: 19px center;
   margin: 2.2em auto;
   border: none;
   font-family: @font-swatch7-font-family;
@@ -1899,6 +1912,7 @@ footer {
     border-top: 1px solid lighten(@color-swatch2,10%);
     padding: 0;
   }
+
 
  .widget.extendednavigation ul li {
     border-bottom: 1px solid lighten(@color-swatch2,10%);
