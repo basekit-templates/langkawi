@@ -14,9 +14,13 @@
 
 <div class="header-desktop">
     
-        <div class="header-profile-widgets">
-            {{widget('profile', 'headerprofileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
-            {{widget('profile', 'headerprofilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        <div class="header-content-widgets">
+            <div class="header-left">
+            {{widget('content', 'headercontentleft', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+            </div>
+            <div class="header-right">
+            {{widget('content', 'headercontentright', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+            </div>
         </div>
 
         <header class="companyheader clearfix">
@@ -24,7 +28,7 @@
             {{widget('companyname', 'desktopcompanyname', {"business": "profile"})|raw}}
         </header>  
 
- </div> 
+</div> 
  
 
  <!-- TOP NAV= Company name and nav in IPAD -->
