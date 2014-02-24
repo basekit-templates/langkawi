@@ -42,6 +42,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     overflow: visible;
 }
 
+.widget .extendednavigation ul li.folder:after {
+  border-top-color: @color-swatch3;
+  top:25px;
+}
+
 /* DEFAULT PAGE TYPE */
 
 .bk-pt-default .main {
@@ -56,7 +61,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
- .bk-header {
+ header.bk-header  {
   background-color: @color-swatch1;
  }
 
@@ -107,7 +112,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* SUB NAV */
 
-header nav {
+header.bk-header  nav {
   width: 100%;
   background-color: @color-swatch7;
 }
@@ -150,7 +155,7 @@ header nav {
    FOOTER
    =============================== */
 
-.bk-footer {
+footer.bk-footer{
     background-color: @color-swatch1;
     padding: 20px 0 20px 0;
     margin-top: 3em;
@@ -159,10 +164,10 @@ header nav {
     border-top: 1px solid @color-swatch2;
 }
 
-.bk-footer h1,
-.bk-footer h2,
-.bk-footer h3,
-.bk-footer h4 {
+footer.bk-footer h1,
+footer.bk-footer h2,
+footer.bk-footer h3,
+footer.bk-footer h4 {
     color: @color-swatch6;
     padding-bottom: 20px;
 }
@@ -760,13 +765,6 @@ hr.line {
     border-bottom: none;
 }
 
-.widget.twitter .twitter-profile-pic {
-    margin: 5px 20px 0 0;
-    width: 45px;
-    height: 48px;
-    float: left;
-}
-
 .widget.twitter .twitter-content span.bk-full-name {
     color: @font-swatch4-color;
     font-size: @font-swatch5-font-size;
@@ -1143,15 +1141,15 @@ hr.line {
    PROFILE WIDGET
    =============================== */
 
-footer .widget.profile {
+footer.bk-footer .widget.profile {
   margin: 0 auto;
   padding-bottom: 10px;
   text-align: center;
 }
 
 
-footer .widget.profile span,
-footer .widget.profile a {
+footer.bk-footer .widget.profile span,
+footer.bk-footer .widget.profile a {
     display: block;
     font-size: bkscale(@font-swatch5-font-size,1.1);
     font-family: @font-swatch5-font-family;
@@ -1160,7 +1158,7 @@ footer .widget.profile a {
     font-weight: @font-swatch5-font-weight;
 }
 
-footer .widget.profile a:hover {
+footer.bk-footer .widget.profile a:hover {
     color: @font-swatch4-color;
     text-decoration: none;
 }
@@ -1235,7 +1233,7 @@ footer .widget.profile a:hover {
 color: @color-swatch5;
 }
 
-footer .widget.profile .twitter span {
+footer.bk-footer .widget.profile .twitter span {
   display: inline;
 }
 
@@ -1281,7 +1279,7 @@ footer .widget.profile .twitter span {
 }
 
 .widget.profile fieldset button.btn {
-    padding: 16px 40px;
+    padding: 8px 40px;
     margin: 0;
     border: none;
     font-family: @font-swatch7-font-family;
@@ -1374,7 +1372,7 @@ footer .widget.profile .twitter span {
 }
 
 .widget.signupform fieldset button.btn {
-    padding: 16px 40px;
+    padding: 8px 40px;
     margin: 0;
     border: none;
     background-color: lighten(@color-swatch5,30%);
@@ -1512,7 +1510,7 @@ footer .widget.profile .twitter span {
 
 
 @media only screen and (max-width: 1400px) { 
-    .right, footer {
+    .right, footer.bk-footer {
        padding-left: 192px;
        padding-right: 10px;
        width: auto;
@@ -1579,7 +1577,7 @@ footer .widget.profile .twitter span {
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default .bk-header {
+.bk-pt-default header.bk-header  {
   border-bottom: none;
 }
 
@@ -1588,13 +1586,13 @@ footer .widget.profile .twitter span {
 }
 
 
-.bk-header {
+header.bk-header  {
   padding: 0;
   width: 90%;
   margin: 0 auto;
 }
 
-.bk-footer {
+footer.bk-footer {
   min-height: auto;
   padding: 3% 5%;
 
@@ -1845,17 +1843,17 @@ footer .widget.profile .twitter span {
 
 @media only screen and (max-width: 480px) { 
 
-    footer {
+    footer.bk-footer {
         padding: 1.5em 0;
         min-height: 90px;
     }
 
-    footer .wrapper {
+    footer.bk-footer .wrapper {
         width: 90%;
         margin: 0 5%;
     }
 
-    footer h1, footer h2, footer h3, footer h4 {
+    footer.bk-footer h1, footer.bk-footer h2, footer.bk-footer h3, footer.bk-footer h4 {
         padding-bottom: 20px;
     }
 
@@ -2177,6 +2175,16 @@ footer .widget.profile .twitter span {
         display: inline-block;
         margin-left: 2%;
         width: 15%;
+        padding: 8px 40px;
+        margin: 0;
+        border: none;
+        font-family: @font-swatch7-font-family;
+        font-size: @font-swatch7-font-size;
+        font-weight:@font-swatch7-font-weight;
+        background-color: @font-swatch7-background-color;
+        color: @font-swatch7-color;
+        text-decoration: none;
+        letter-spacing: 1px;
         @media @mobile {
             width: 30%;
         }
@@ -2191,6 +2199,11 @@ footer .widget.profile .twitter span {
     img {
         display: none;
     }
+}
+
+.blog-search-submit-button:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
 }
 
 /* ===============================
