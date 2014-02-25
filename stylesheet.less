@@ -369,7 +369,6 @@ header nav {
   float: left;
 }
 
-
 .widget.feature .feature-bgimg {
   height: 650px; 
   background-position: center center;
@@ -781,13 +780,9 @@ hr.line {
 
 }
 
-
-
 .widget.twitter .twitter-content span.bk-full-name:hover, .widget.twitter .twitter-content span a:hover {
     text-decoration: underline;
 }
-
-
 
 /* ===============================
    CONTACT FORM WIDGET
@@ -1138,21 +1133,24 @@ hr.line {
     background-image: image('/images/social/socialicons-youtube.png')
 }
 
+.widget.twitter .twitter-profile-pic {
+  height: 98px;
+  width: 98px;
+}
 
 /* ===============================
    PROFILE WIDGET
    =============================== */
 
-footer .widget.profile {
+.bk-footer .widget.profile {
   margin: 0 auto;
   padding-bottom: 10px;
   text-align: center;
 }
 
 
-footer .widget.profile span,
-footer .widget.profile a {
-    display: block;
+.bk-footer .widget.profile span,
+.bk-footer .widget.profile a {
     font-size: bkscale(@font-swatch5-font-size,1.1);
     font-family: @font-swatch5-font-family;
     color: @font-swatch5-color;
@@ -1160,7 +1158,7 @@ footer .widget.profile a {
     font-weight: @font-swatch5-font-weight;
 }
 
-footer .widget.profile a:hover {
+.bk-footer .widget.profile a:hover {
     color: @font-swatch4-color;
     text-decoration: none;
 }
@@ -1235,7 +1233,7 @@ footer .widget.profile a:hover {
 color: @color-swatch5;
 }
 
-footer .widget.profile .twitter span {
+.bk-footer .widget.profile .twitter span {
   display: inline;
 }
 
@@ -1512,7 +1510,7 @@ footer .widget.profile .twitter span {
 
 
 @media only screen and (max-width: 1400px) { 
-    .right, footer {
+    .right, .bk-footer {
        padding-left: 192px;
        padding-right: 10px;
        width: auto;
@@ -1845,17 +1843,17 @@ footer .widget.profile .twitter span {
 
 @media only screen and (max-width: 480px) { 
 
-    footer {
+    .bk-footer {
         padding: 1.5em 0;
         min-height: 90px;
     }
 
-    footer .wrapper {
+    .bk-footer .wrapper {
         width: 90%;
         margin: 0 5%;
     }
 
-    footer h1, footer h2, footer h3, footer h4 {
+    .bk-footer h1, .bk-footer h2, .bk-footer h3, .bk-footer h4 {
         padding-bottom: 20px;
     }
 
