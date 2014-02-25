@@ -43,7 +43,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget .extendednavigation ul li.folder:after {
-  top: 25px;
+  border-top-color: @color-swatch3;
+  top:25px;
 }
 
 /* DEFAULT PAGE TYPE */
@@ -60,7 +61,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
- .bk-header {
+ header.bk-header  {
   background-color: @color-swatch1;
  }
 
@@ -111,7 +112,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* SUB NAV */
 
-header nav {
+header.bk-header  nav {
   width: 100%;
   background-color: @color-swatch7;
 }
@@ -154,7 +155,7 @@ header nav {
    FOOTER
    =============================== */
 
-.bk-footer {
+.bk-footer{
     background-color: @color-swatch1;
     padding: 20px 0 20px 0;
     margin-top: 3em;
@@ -372,6 +373,7 @@ header nav {
 .widget.feature {
   float: left;
 }
+
 
 .widget.feature .feature-bgimg {
   height: 650px; 
@@ -777,9 +779,13 @@ hr.line {
 
 }
 
+
+
 .widget.twitter .twitter-content span.bk-full-name:hover, .widget.twitter .twitter-content span a:hover {
     text-decoration: underline;
 }
+
+
 
 /* ===============================
    CONTACT FORM WIDGET
@@ -1130,10 +1136,6 @@ hr.line {
     background-image: image('/images/social/socialicons-youtube.png')
 }
 
-.widget.twitter .twitter-profile-pic {
-  height: 98px;
-  width: 98px;
-}
 
 /* ===============================
    PROFILE WIDGET
@@ -1148,6 +1150,7 @@ hr.line {
 
 .bk-footer .widget.profile span,
 .bk-footer .widget.profile a {
+    display: block;
     font-size: bkscale(@font-swatch5-font-size,1.1);
     font-family: @font-swatch5-font-family;
     color: @font-swatch5-color;
@@ -1276,7 +1279,7 @@ color: @color-swatch5;
 }
 
 .widget.profile fieldset button.btn {
-    padding: 16px 40px;
+    padding: 8px 40px;
     margin: 0;
     border: none;
     font-family: @font-swatch7-font-family;
@@ -1369,7 +1372,7 @@ color: @color-swatch5;
 }
 
 .widget.signupform fieldset button.btn {
-    padding: 16px 40px;
+    padding: 8px 40px;
     margin: 0;
     border: none;
     background-color: lighten(@color-swatch5,30%);
@@ -1555,7 +1558,7 @@ color: @color-swatch5;
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default .bk-header {
+.bk-pt-default header.bk-header  {
   border-bottom: none;
 }
 
@@ -1564,13 +1567,13 @@ color: @color-swatch5;
 }
 
 
-.bk-header {
+header.bk-header  {
   padding: 0;
   width: 90%;
   margin: 0 auto;
 }
 
-.bk-footer {
+footer.bk-footer {
   min-height: auto;
   padding: 3% 5%;
 
@@ -1821,17 +1824,17 @@ color: @color-swatch5;
 
 @media only screen and (max-width: 480px) { 
 
-    .bk-footer {
+    footer.bk-footer {
         padding: 1.5em 0;
         min-height: 90px;
     }
 
-    .bk-footer .wrapper {
+    footer.bk-footer .wrapper {
         width: 90%;
         margin: 0 5%;
     }
 
-    .bk-footer h1, .bk-footer h2, .bk-footer h3, .bk-footer h4 {
+    footer.bk-footer h1, footer.bk-footer h2, footer.bk-footer h3, footer.bk-footer h4 {
         padding-bottom: 20px;
     }
 
