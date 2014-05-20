@@ -2,6 +2,7 @@
 	"name":"Langkawi",
 	"thumbnail":"langkawi.png",
 	"screenshot":"langkawi.png",
+	"templateType":"standard",
     "tags": {
     "en": ["turism", "clean", "modern", "colorful", "colourful", "flexible", "open", "vertical menu", "spa", "serif", "travel", "hospitality", "holiday", "hotel"],
     "es": ["turismo", "limpio", "moderno", "colorido", "flexible", "abierto", "menú vertical", "balneario", "serif", "viaje", "hoteleria", "vacaciones", "hotel"],
