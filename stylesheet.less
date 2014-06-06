@@ -42,8 +42,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     overflow: visible;
 }
 
-.widget .extendednavigation ul li.folder:after {
-  top: 25px;
+.vertical-nav .widget .extendednavigation ul li.folder:after {
+  top: 18px;
 }
 
 /* DEFAULT PAGE TYPE */
@@ -226,12 +226,8 @@ header nav {
    EXTENDED NAVIGATION
    =============================== */
 
-.vertical-nav .widget .extendednavigation {
-  float: none;
-}
 
 .vertical-nav .widget.extendednavigation {
-    text-align: left;
     position: relative;
 }
 
@@ -265,7 +261,6 @@ header nav {
 
 .vertical-nav .widget.extendednavigation ul li {
     display: block;
-    float: none;
 }
 
 .vertical-nav .widget.extendednavigation ul li a {
@@ -348,7 +343,6 @@ header nav {
 .main .widget.extendednavigation {
     max-width: 100%;
     width: 100%;
-    float: none;
 }
 
 .main .widget.extendednavigation:before,
@@ -1629,7 +1623,6 @@ color: @color-swatch5;
       display: block;
       width: 90%;
       margin: 0 5%;
-      float:right;
   }
 
    /* NAV ICON */
@@ -1638,7 +1631,7 @@ color: @color-swatch5;
     display: block;
     width: 100%;
     position: absolute;
-    top: -49px;
+    top: 32px;
   }
 
     .widget .extendednavigation a.pull:after {
@@ -1667,7 +1660,6 @@ color: @color-swatch5;
  .widget.extendednavigation ul li {
     border-bottom: 1px solid lighten(@color-swatch2,10%);
     padding: 16px 0;
-    text-align: left;
     display: block;
   }
 
@@ -1700,6 +1692,11 @@ color: @color-swatch5;
     margin: 0;
     color: @color-swatch4;
   }
+
+.widget .extendednavigation ul li.folder:after {
+  border-top-color: @color-swatch4;
+  top:25px;
+}
 
 .widget.extendednavigation ul li a:hover {
     color: @color-swatch7;
@@ -1851,7 +1848,7 @@ color: @color-swatch5;
    /* NAV ICON */
 
   .widget .extendednavigation a.pull {
-    top: -41px;
+    top: 23px;
   }
 
 
