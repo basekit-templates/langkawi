@@ -6,7 +6,7 @@
 
 <div class="left">
         <div class="vertical-nav">
-            {{widget('extendednavigation', 'sidenavigation', {})|raw}}
+            {{widget('extendednavigation', 'sidebarnavigation', {"align":"left"})|raw}}
         </div>
 </div>
 
@@ -37,7 +37,7 @@
             {{widget('companyname', 'topcompanyname', {"business": "profile"})|raw}}
         </div>
     </header>
-            {{widget('extendednavigation', 'topnavigation', {})|raw}}
+            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
     <section>
             {{widget('feature', 'tabletfeaturehome', {"header": "profile", "strapline":"profile", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
      </section>
@@ -50,7 +50,7 @@
 
 <footer class="bk-footer">
     <div class="wrapper clearfix">    
-            {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType' : 'socialicons' })|raw}}
+            {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
             {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
     </div>
 </footer>
