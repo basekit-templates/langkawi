@@ -4,57 +4,39 @@
 
 <div class="bk-pt-homepage">
 
-<div class="left">
-        <div class="vertical-nav">
-            {{widget('extendednavigation', 'sidebarnavigation', {"align":"left"})|raw}}
-        </div>
-</div>
+<div class="nav">
+    {{widget('extendednavigation', 'extendednavigation', {"align":"left"})|raw}}
+</div> <!-- end nav -->
 
-<div class="header-desktop"> 
-    <div class="header-content-widgets">
-        <div class="header-left">
-        {{widget('content', 'headercontentleft', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
-        </div>
-        <div class="header-right">
-        {{widget('content', 'headercontentright', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
-        </div>
-    </div>
-    <header class="companyheader clearfix">
-        {{widget('logo', 'desktoplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
-        {{widget('companyname', 'desktopcompanyname', {"business": "profile"})|raw}}
-    </header>  
-    <section>
-        {{widget('feature', 'desktopfeaturehome', {"header": "profile", "strapline":"profile", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
-    </section>
-</div> 
-
- <!-- TOP NAV= Company name and nav in IPAD -->
-
-<div class="top-nav wrapper clearfix">
-    <header class="bk-header">
-        <div class="companyheader clearfix">
-            {{widget('logo', 'toplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'topcompanyname', {"business": "profile"})|raw}}
-        </div>
-    </header>
-            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
-    <section>
-            {{widget('feature', 'tabletfeaturehome', {"header": "profile", "strapline":"profile", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
-     </section>
-</div>       
- <div class="right clearfix">
+<div class="zone-area clearfix">
+    <div class="header-container">
+        <div class="header-content-widgets">
+            <div class="header-left">
+                {{widget('content', 'headercontentleft', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+            </div>
+            <div class="header-right">
+                {{widget('content', 'headercontentright', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+            </div>
+        </div><!-- end header-content-widgets -->
+        <header class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </header>  
+        <section>
+            {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+        </section>
+    </div> <!-- end header-container -->
     <div class="main wrapper clearfix">
         {{zone('main')|raw}}
     </div>  
-</div>
-
-<footer class="bk-footer">
-    <div class="wrapper clearfix">    
-            {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-            {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+    <footer class="bk-footer">
+    <div class="wrapper clearfix">       
+        {{widget('profile', 'footercolumn1profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
+        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
     </div>
-</footer>
+</footer><!-- end bk-footer -->
+</div><!-- end zone-area -->
 
-</div>
+</div><!-- bk-pt-homepage -->
 
 {% endblock %}
