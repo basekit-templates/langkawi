@@ -103,7 +103,7 @@
             "font-size": "15px",
             "font-weight": "400",
             "line-height": "25px",
-            "color": "darken(@color-swatch7,40%)",
+            "color": "darken(@color-swatch7,35%)",
             "color-hover": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch7",
