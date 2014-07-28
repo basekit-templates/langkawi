@@ -227,8 +227,8 @@ header nav {
                 /* Hidden until nav icon is clicked */
                 display: none;
                 /* Then these styles are applied */
-                width: 100%;
-                margin: 0;
+                width: 90%;
+                margin: 0 5%;
                 padding: 55px 0 0;
                 background-color: transparent;
             }
@@ -236,12 +236,11 @@ header nav {
                 width: 100%;
                 border-bottom: 1px solid fade(@color-swatch4,10%);
                 display: block;
-                padding: 15px 0;
                 @media @tablet {
                     background-color: transparent;
                     width: 100%;
-                    padding: 1em 0;
                     border-bottom: 1px solid fade(@color-swatch4,10%);
+                    padding:0;
                 }
                 &:first-child {
                     border-top: 1px solid fade(@color-swatch4,10%);
@@ -252,18 +251,17 @@ header nav {
                         background-color: darken(@color-swatch7,3%);
                         z-index: 500;
                         padding: 0;
-                        margin: 15px 0 0 0;
+                        margin: 0;
                         @media @tablet {
                           background-color: darken(@color-swatch7,6%);
                         }
                         li {
                             display: block;
-                            padding: 15px 5px;
                             width: 100%;
                                 .box-sizing {
                                     a {
                                         display: block;
-                                        padding: 0;
+                                        padding: 15px 5px;
                                     }
                                 }
                         }
@@ -271,10 +269,7 @@ header nav {
                 }
                 a {
                     display: block;
-                    padding: 0 1px;
-                    @media @tablet {
-                        padding: 0 15px;
-                    }
+                    padding: 15px 1px;
                     font-family: @font-swatch6-font-family;
                     font-size: @font-swatch6-font-size;
                     font-weight: @font-swatch6-font-weight;
@@ -285,11 +280,13 @@ header nav {
                         color: @font-swatch6-color-hover;
                         text-decoration: none;
                     }
+                    @media @tablet {
+                      padding: 10px 1px;
+                    }
                 }
 
                 &.folder {
                     /* Folder dropdown arrow BG style goes Here */  
-                    margin-right: 20px;            
                     cursor: pointer;
                     background-image: none;
                     .text {
@@ -301,39 +298,33 @@ header nav {
                         line-height: @font-swatch6-line-height;
                         letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
-                        padding: 0 1px;
-                        @media @tablet {
-                            padding: 0 15px;
-                        }
+                        padding: 15px 1px;
                         &:after {
                             content: "\25BC";
                             font-size: 5px;
                             position: absolute;
-                            top: 1px;
-                            display: block;
+                            padding-left: 8px;
                             z-index: 9999999;
-                            right: 0;
-                            color: @color-swatch4;
-                            @media @tablet {
-                                font-size: 10px;
-                                padding-right: 10px;
-                            }
+                            color: @font-swatch6-color;
                         }
                         &:hover {
                             color: @font-swatch6-color-hover;
                             text-decoration: none;
+                            &:after {
+                              color: @font-swatch6-color-hover;
+                            }
+                        }
+                        @media @tablet {
+                          padding: 10px 1px;
                         }
                     }
                     ul {
                         padding: 0;
                         width: 100%;
-                        @media @tablet {
-                            margin-top: 14px;
-                        }
                         li {
                             a {
                                 .text {
-                                    padding: 0;
+                                    padding: 0 5px;
                                     &:after {
                                         content: "";
                                     }
@@ -382,9 +373,24 @@ header nav {
     }
 }
 
+// Selected state
+
+.widget.extendednavigation ul li.selected, .widget.extendednavigation ul li:hover ul li.selected, .widget.extendednavigation ul li.folder.selected ul li.selected, .widget.extendednavigation ul li.folder.selected {
+    a, .text {
+        color: @color-swatch1;
+    }
+}
+
+.extendednavigation ul li.folder.selected ul li .text {
+    color: @font-swatch6-color;
+}
+
+
 .widget .extendednavigation ul li.folder:after {
     display: none;
 }
+
+
 
 
 /* ===============================
