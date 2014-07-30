@@ -755,23 +755,18 @@ hr.line {
    TWITTER FULL
    =============================== */
 
-.widget.twitter {
-}
-
-.widget.twitter p a {
+.widget.twitter a {
    font-family: @font-swatch5-font-family;
-   color: @font-swatch4-color;
+   color: @color-swatch3;
    font-size: @font-swatch5-font-size;
-   text-decoration: underline;
 }
 
 .widget.twitter .twitter-content p {
-    color: @font-swatch5-color;
-    padding: 0;
+  color: @font-swatch5-color;
 }
 
 .widget.twitter a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .widget.twitter ul {
@@ -787,33 +782,58 @@ hr.line {
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     color: @font-swatch5-color;
-    padding: 30px 0;
-    margin-bottom: 10px;
-    border-bottom: 1px solid @color-swatch2;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lighten(@color-swatch5,40%);
 }
 
-.widget.twitter ul li:last-child {
-    padding-bottom: 30px;
-    border-bottom: none;
+ul.twitter {
+    .twitter-profile-pic {
+        margin-right: 10px;
+        margin-top: 4px;
+        a img {
+            width: 48px;
+        }
+    }
+    .twitter-content {
+        padding-left: 68px;
+        p {
+            padding-bottom: 0;
+        }
+        time {
+            font-size: @font-swatch5-font-size;
+        }
+    }
 }
 
-.widget.twitter .twitter-content span.bk-full-name {
-    color: @font-swatch4-color;
-    font-size: @font-swatch5-font-size;
-    line-height: @font-swatch5-line-height;
-    text-decoration: none;
+.widget.profile ul.twitter .twitter-content {
+        padding-left: 0;
 }
 
 .widget.twitter .twitter-content span a {
-    text-decoration: none;
-    color: @font-swatch4-color;
-    font-size: @font-swatch5-font-size;
+  padding-right: 20px;
+}
 
+
+.widget.twitter .twitter-content time, .widget.twitter .twitter-content span.bk-full-name, .widget.twitter .twitter-content span, .widget.twitter .twitter-content span a {
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+    font-family: @font-swatch4-font-family;
+    color: @color-swatch3;
+    font-size: @font-swatch5-font-size;
+}
+
+.widget.twitter .twitter-content span a {
+   color: @color-swatch3;
 }
 
 .widget.twitter .twitter-content span.bk-full-name:hover, .widget.twitter .twitter-content span a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
 
 /* ===============================
    CONTACT FORM WIDGET
@@ -1083,7 +1103,8 @@ hr.line {
     -moz-border-radius: 30px;
     border-radius: 30px;
     text-decoration: none;
-    text-indent: -99999px;
+    text-indent: 99999px;
+    overflow: hidden;
     white-space: nowrap;
     border: none;
 }
@@ -1164,10 +1185,6 @@ hr.line {
     background-image: image('/images/social/socialicons-youtube.png')
 }
 
-.widget.twitter .twitter-profile-pic {
-  height: 98px;
-  width: 98px;
-}
 
 /* ===============================
    PROFILE WIDGET
@@ -1310,7 +1327,6 @@ color: @color-swatch5;
 }
 
 .widget.profile fieldset button.btn {
-    padding: 16px 40px;
     margin: 0;
     border: none;
     font-family: @font-swatch7-font-family;
@@ -1326,6 +1342,134 @@ color: @color-swatch5;
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
 }
+
+/* ===============================
+   FORMS
+   =============================== */
+
+.widget.profile form {
+    margin: 0 0 10px;
+}
+
+.blogsearch {
+    form {
+        label {
+            display: block;
+            @media @mobile {
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+        button.blog-search-submit-button {
+            padding: 7px 15px 10px;
+        }
+    }
+}
+
+.productlist-display-form {
+    .form-group {
+        display: inline-block;
+        @media @mobile {
+            width: 100%;
+        }       
+    }
+}
+
+select {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid darken(@color-swatch1,7%);
+    background-color:  darken(@color-swatch1,5%);
+    color: @color-swatch4;
+    height: 35px;
+    line-height: 34px;
+    @media @mobile {
+        width: 100%;
+        height: 45px;
+    }
+}
+select[name="displayCount"] {
+    margin-bottom: 0;
+}
+
+
+/* ===============================
+   BLOG LIST POSTS
+   =============================== */
+
+.widget.blogpostlist .blog-post-item {
+     border-bottom: 1px dotted fade(@color-swatch7,25%);
+ }
+
+.blog-post-item {
+    margin: 3em 0 2.5em;
+    .blog-post-feature-image-wrap {
+        background-image: none !important;
+        margin-bottom: 2em;
+        background-repeat: no-repeat !important;
+        min-height: 0;
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 600px;
+        }
+    }/* end blog-post-feature-image-wrap */
+    p.blog-post-more-link {
+        padding-top: 1.5em;
+    }
+}
+
+/* ===============================
+   BLOG POST SHARING
+   =============================== */
+
+.blog-post-sharing {
+    margin: 1.8em 0;
+    button {
+        margin-right: 5px;
+        padding: 6px 12px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+        text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+        &.btn.facebook {
+            background-color: #3b5998;
+            border: 1px solid darken(#3b5998,5%);
+        }
+        &.btn.twitter {
+            background-color: #4099FF;
+            border: 1px solid darken(#4099FF,5%);
+        }
+        &.btn.googleplus {
+            background-color: #d34836;
+            border: 1px solid darken(#d34836,5%);
+        }
+    }
+}
+
+/* ===============================
+   BLOG TIME
+   =============================== */
+
+time.blog-post-published-date, footer.blog-post-metadata time {
+    padding: 1em 0;
+    display: inline-block;
+    font-size: @font-swatch5-font-size;
+
+}
+
+time.blog-post-published-date {
+    margin: 0 0 1.5em;
+}
+
+footer.blog-post-metadata time {
+    margin: 1em 0;
+}
+
 
 /* ===============================
    LINKED IN
@@ -1675,11 +1819,6 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
       width: 100%;
     }
 
-    .widget.twitter .twitter-profile-pic {
-      height: 98px;
-      width: 98px;
-    }
-
 
 /* Company name */
 
@@ -1780,6 +1919,10 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
       background-color: @font-swatch7-background-color-hover;
       cursor: pointer;
       text-decoration: none;
+      background-image: image('/images/ic-desktop-call.png');
+      background-position: 38px center;
+      background-repeat:no-repeat;
+      padding: 16px 40px 16px 65px;
     }
 
     .widget.clicktocall a.justifyleft {
