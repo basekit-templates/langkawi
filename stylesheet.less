@@ -806,6 +806,11 @@ ul.twitter {
     }
 }
 
+.widget.profile ul.twitter {
+  margin: 0 auto;
+}
+
+
 .widget.profile ul.twitter .twitter-content {
         padding-left: 0;
 }
@@ -1289,9 +1294,13 @@ color: @color-swatch5;
 
 /* FOOTER PROFILE - SINGLE EMAIL FORM */
 
+.widget.profile form fieldset {
+  margin: 0 auto;
+}
+
 .widget.profile fieldset {
     border: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 50%;
 }
@@ -2213,7 +2222,7 @@ line-height:bkscale(@font-swatch5-line-height,0.9);
         }
         label[for=productlist-itemcount] {
           display: inline-block;
-          @media @tablet {
+          @media @mobile {
             display: block;
           }
         }
@@ -2273,9 +2282,6 @@ select[name="displayCount"] {
         &:hover {
           background-color: @font-swatch7-background-color-hover;
           cursor: pointer;
-        }
-        @media @tablet {
-          display: block;
         }
         @media @mobile {
             padding: 8px 14px;
