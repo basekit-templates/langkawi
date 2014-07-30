@@ -1360,21 +1360,6 @@ color: @color-swatch5;
     margin: 0 0 10px;
 }
 
-.blogsearch {
-    form {
-        label {
-            display: block;
-            @media @mobile {
-                margin-bottom: 20px;
-                display: block;
-            }
-        }
-        button.blog-search-submit-button {
-            padding: 7px 15px 10px;
-        }
-    }
-}
-
 .productlist-display-form {
     .form-group {
         display: inline-block;
@@ -1449,10 +1434,13 @@ select[name="displayCount"] {
     }
     input {
         display: inline-block;
-        height: 43px;
-        width: 80%;
+        height: 45px;
+        width: 30%;
         margin-right: 5px;
         margin-bottom: 5px;
+        @media @tablet {
+          width: 80%;
+        }
         @media @mobile {
             width: 65%;
         }
@@ -1463,7 +1451,6 @@ select[name="displayCount"] {
         display: inline-block;
         margin-left: 2%;
         width: 15%;
-        padding: 8px 40px;
         margin: 0;
         border: none;
         font-family: @font-swatch7-font-family;
