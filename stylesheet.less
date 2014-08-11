@@ -2114,6 +2114,38 @@ footer.blog-post-metadata time {
   }
 }
 
+.menu-subsection-header .menu-subsection-name {
+  color: @color-swatch7;
+}
+
+.menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+    padding: 0.5em 2.5em;
+    margin-bottom: 2em;
+    position: relative;
+    border: 1px solid darken(@color-swatch2,20%);
+    background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(@color-swatch2), 0.1);
+    @media @mobile {
+        padding: 0 2em 0;
+        margin-bottom: 2em;
+    }
+    .menu-subsection-header {
+        h2 { /* menu-section-name */
+            color: @color-swatch3;
+            background-image: none;
+            &:before, &:after {
+                    content: "\2605";
+                    display: inline-block;
+                    height: 27px;
+                    width: 28px;
+                    margin: 0 10px;
+                    position: relative;
+                    top: -1px;
+            }
+        }
+    }
+} /* end PROMOTED SUB-SECTION */
+
+
 .widget {
   .youtube, .map {
     margin: 1.5em 0;
