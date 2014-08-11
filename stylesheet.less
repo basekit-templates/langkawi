@@ -236,11 +236,15 @@ header nav {
                 width: 100%;
                 border-bottom: 1px solid fade(@color-swatch4,10%);
                 display: block;
+
                 @media @tablet {
                     background-color: transparent;
                     width: 100%;
                     border-bottom: 1px solid fade(@color-swatch4,10%);
                     padding:0;
+                    &:last-child {
+                      border-bottom: none;
+                    }
                 }
                 &:first-child {
                     border-top: 1px solid fade(@color-swatch4,10%);
@@ -343,22 +347,23 @@ header nav {
                 @media @tablet {
                     display: block;
                     margin: 0;
-                    width: 20px;
-                    height: 44px;
+                    width: 100%;
+                    height: 45px;
                     position: absolute;
-                    top: 15px;
-                    left: 48.5%;
+                    top: 0;
+                    left: 0;
                     &:hover {
                         cursor: pointer;
                     }
                     &:after {
                         content: '';
                         position: absolute;
-                        width: 100%;
+                        width: 20px;
                         height: 3px;
                         background: @color-swatch6;
-                        top: 0;
-                        left: 0;
+                        top: 15px;
+                        left: 50%;
+                        margin-left: -10px;
                         box-shadow: 0 6px 0 @color-swatch6, 0 12px 0 @color-swatch6;
                     }
                 }
@@ -1803,11 +1808,7 @@ footer.blog-post-metadata time {
       text-align: center;
     }
 
-   /* NAV ICON */
 
-  .widget .extendednavigation a.pull {
-    top: 23px;
-  }
 
 
 /* TWITTER */
