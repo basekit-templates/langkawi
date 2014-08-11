@@ -236,11 +236,15 @@ header nav {
                 width: 100%;
                 border-bottom: 1px solid fade(@color-swatch4,10%);
                 display: block;
+
                 @media @tablet {
                     background-color: transparent;
                     width: 100%;
                     border-bottom: 1px solid fade(@color-swatch4,10%);
                     padding:0;
+                    &:last-child {
+                      border-bottom: none;
+                    }
                 }
                 &:first-child {
                     border-top: 1px solid fade(@color-swatch4,10%);
