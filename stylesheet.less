@@ -2350,7 +2350,15 @@ select[name="displayCount"] {
                 .ecombasket-item-info {
                     .ecombasket-item-title, .ecombasket-remove-button {
                         color: @color-swatch3;
+                        font-family: @font-swatch5-font-family;
+                        font-size: @font-swatch5-font-size;
+                        border: none;
+                        background-color: transparent;
                         text-decoration: none;
+                        padding: 0;
+                        margin: 0;
+                        display: block;
+                        text-align: left;
                         &:hover {
                             text-decoration: underline;
                         }
@@ -2374,6 +2382,10 @@ a.btn.ecombasket-summary-link {
 /* ===============================
   ECOM - PRODUCT
    =============================== */
+
+.widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
+  background-image: none !important;
+}
 
 .ecom-product-long-description {
   margin: 2em 0;
