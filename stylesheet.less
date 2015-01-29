@@ -85,7 +85,7 @@ body {
   background-color: @color-swatch2;
   display: inline-block;
   width: 100%;
-  padding: 20px 20px 10px;
+  padding: 15px 20px 10px;
   @media @tablet {
         padding: 3% 5% 1.5%;
     }
@@ -594,6 +594,11 @@ left: inherit !important;
 {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
+}
+
+.expand .more, 
+.expand .less {
+  color: @font-swatch7-color;
 }
 
 /* ===============================
@@ -1871,6 +1876,7 @@ footer.blog-post-metadata time {
       display: block;
       position: relative;
       padding: 10px 0;
+      word-wrap: break-word;
     }
 
     .widget.feature button {
