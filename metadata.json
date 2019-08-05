@@ -1,5 +1,6 @@
 {
 	"name":"Langkawi",
+	"versionTenCompatible": 1,
 	"thumbnail":"langkawi.png",
 	"screenshot":"langkawi-screenshot.jpg",
 	"templateType":"standard",
