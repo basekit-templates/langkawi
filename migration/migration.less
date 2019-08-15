@@ -10,23 +10,52 @@
 // -----------------------------
 
 
-// Template wrapper (replace with corresponding template classes)
 .main.wrapper {
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
-  
-// Main content spacing (replace with corresponding template class)
 .main {
   padding: 0;
 }
 
-// Widget overflow to allow 10S overlays to display correctly
-.widget.content {
-  overflow: inherit;
+.widget.feature .content .spare {
+    width: 90%;
+    max-width: @container-width;
+    margin: 0 auto;
 }
 
+.row-overlay:before {
+    background: none !important;
+}
+
+&.edit {
+    .nav {
+        z-index: 1;
+
+        @media only screen and (max-width: 1290px) {
+            width: ~"calc(22% - 44px)";
+        }
+        @media only screen and (max-width: 930px) {
+            width: 22%;
+        }
+        @media @tablet {
+            width: 100%;
+        }
+    }
+    .zone-area {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.widget.content {
+    overflow: inherit;
+}
+
+.bk-footer {
+    margin-top: 0;
+}
 
 
 
@@ -53,6 +82,11 @@
   margin-right: auto;
   max-width: @container-width;
   width: 90%;
+  
+  @media @tablet {
+    max-width: 90%;
+  }
+  
 }
 
 
@@ -97,12 +131,7 @@
 
 // Adds spacing to the section when a widget is before it
 #page-zones__main > .widget:not(.row) + .row {
-  margin-bottom: @spacing--other;
   margin-top: @spacing--other;
-
-  &:not(:last-child) {
-       margin-bottom: 0;
-  }
 }
 
 
